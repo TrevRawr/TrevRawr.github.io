@@ -8,6 +8,7 @@ var CopyWebpackPlugin = require('copy-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
+var PrerenderSpaPlugin = require('prerender-spa-plugin')
 
 var env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
@@ -27,6 +28,11 @@ var webpackConfig = merge(baseWebpackConfig, {
     chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
   },
   plugins: [
+    // explained here: https://vuejs-templates.github.io/webpack/prerender.html
+    new PrerenderSpaPlugin(
+      path.join(__dirname, '../dist'),
+      [ '/']
+    ),
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
     new webpack.DefinePlugin({
       'process.env': env
