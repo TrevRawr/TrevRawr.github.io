@@ -10,10 +10,10 @@
           <v-tabs-slider class="yellow"></v-tabs-slider>
           <!-- the to prop uses vue router to fulfill the link -->
           <v-tabs-item to='/'>
-            Home
+            About
           </v-tabs-item>
-          <v-tabs-item to='/hello'>
-            Hello
+          <v-tabs-item to='/projects'>
+            Projects
           </v-tabs-item>
         </v-tabs-bar>
       </v-tabs>
