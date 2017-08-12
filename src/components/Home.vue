@@ -1,9 +1,16 @@
 <template>
-  <div class='home'>
-    <div id='banner'>
-      <h1>Trevor Clelland</h1>
-      <router-link to="/hello">This is a button</router-link>
-    </div>
+  <div id="example-1">
+    <v-layout justify-center>
+      <v-card>
+        <v-card-title class='blue white--text' primary-title>
+          <div class="headline">Trevor Clelland</div>
+        </v-card-title>
+        <v-divider></v-divider>
+        <v-card-text>
+          <span class="grey--text">Developer and Student</span>
+        </v-card-text>
+      </v-card>
+    </v-layout>
   </div>
 </template>
 
