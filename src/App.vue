@@ -1,8 +1,21 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
-  </div>
+    <v-app light>
+      <v-navigation-drawer
+          persistent
+          enable-resize-watcher
+        >
+      </v-navigation-drawer>
+      <v-toolbar></v-toolbar>
+      <main>
+        <v-container fluid>
+          <v-alert success value="true">
+            This is a success alert.
+          </v-alert>
+          <router-view></router-view>
+        </v-container>
+      </main>
+      <v-footer></v-footer>
+    </v-app>
 </template>
 
 <script>
@@ -11,13 +24,6 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="stylus">
+  @import './stylus/main'
 </style>
