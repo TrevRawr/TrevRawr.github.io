@@ -1,20 +1,25 @@
 <template>
     <v-app light>
-      <v-navigation-drawer
-          persistent
-          enable-resize-watcher
-        >
-      </v-navigation-drawer>
-      <v-toolbar></v-toolbar>
-      <main>
-        <v-container fluid>
-          <v-alert success value="true">
-            This is a success alert.
-          </v-alert>
-          <router-view></router-view>
-        </v-container>
-      </main>
-      <v-footer></v-footer>
+      <v-tabs dark fixed centered>
+        <v-toolbar extended class="cyan" dark>
+          <v-toolbar-side-icon></v-toolbar-side-icon>
+          <v-spacer></v-spacer>
+          <v-toolbar-title slot="extension" class="display-2">Trevor Clelland</v-toolbar-title>
+        </v-toolbar>
+        <v-tabs-bar slot="activators" class="cyan">
+          <v-tabs-slider class="yellow"></v-tabs-slider>
+          <!-- the to prop uses vue router to fulfill the link -->
+          <v-tabs-item to='/'>
+            Home
+          </v-tabs-item>
+          <v-tabs-item to='/hello'>
+            Hello
+          </v-tabs-item>
+        </v-tabs-bar>
+      </v-tabs>
+      <!-- <v-fade-transition> -->
+        <router-view></router-view>
+      <!-- </v-fade-transition> -->
     </v-app>
 </template>
 
