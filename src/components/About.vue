@@ -1,9 +1,10 @@
+<!-- A "page" that talks about who I am -->
 <template>
   <v-container>
     <v-card>
       <v-card-media
           class="white--text"
-          height="300px"
+          height="400px"
           src="/static/cover-photo.jpg"
         >
         <v-container fill-height fluid>
@@ -16,7 +17,7 @@
       </v-card-media>
       <v-card-text>
         <p>
-          My name is <strong>Trevor Clelland</strong>. I am a software developer as well as a student in the
+          My name is <strong>Trevor Clelland</strong>. I am a software developer and a student in the
           <a href='http://www.sfu.ca/computing/prospective-students/undergraduate-students/programs/degree-programs/softwaresystems.html'>Software Systems</a>
           program at <strong>Simon Fraser University</strong> (SFU). I am interested in a wide variety of domains in Computer Science, but regardless of what I am working on,
           my focus is designing high quality, practical, readable, and maintainable code.
@@ -30,8 +31,11 @@
           I also have a life outside of Computer Science! My hobbies include mountain biking, skiing, playing guitar, video games, and film making.
           As with my "hobby" of programming, I'm not very good at keeping my hobbies separate from my work. As a film maker, I worked on a
           <a href='https://www.youtube.com/watch?v=cQ3d8Zv0Aa4'>promotional film</a> for a program at SFU. I am also a part of a small group of
-          film makers/friends called <a href='http://foxwoodfilms.com/'>Foxwood Films</a> primarily produce short films on mountain biking
+          film makers/friends called <a href='http://foxwoodfilms.com/'>Foxwood Films</a>. We primarily produce short films on mountain biking
         </P>
+        <p>
+          If you would like to get in touch, don't hesitate to send mes a message.
+        </p>
       </v-card-text>
     </v-card>
   </v-container>
