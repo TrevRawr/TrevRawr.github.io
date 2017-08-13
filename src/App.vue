@@ -9,10 +9,10 @@
         <v-tabs-bar slot="activators" class="cyan">
           <v-tabs-slider class="yellow"></v-tabs-slider>
           <!-- the to prop uses vue router to fulfill the link -->
-          <v-tabs-item to='/'>
+          <v-tabs-item :to="{name: 'About'}">
             About
           </v-tabs-item>
-          <v-tabs-item to='/projects'>
+          <v-tabs-item :to="{name: 'Projects'}">
             Projects
           </v-tabs-item>
         </v-tabs-bar>

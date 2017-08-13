@@ -1,0 +1,26 @@
+<!-- A simple component to facilitate code reuse -->
+<template>
+  <v-btn :href="href" flat :class="colorClass">
+    <v-icon :class='[marginClass, colorClass]'>
+      {{ icon }}
+    </v-icon>
+    {{ text }}
+  </v-btn>
+</template>
+
+<script>
+  export default {
+    name: 'icon-button',
+    props: ['href', 'color', 'icon', 'text'],
+    data () {
+      return {
+        marginClass: 'mr-2'
+      }
+    },
+    computed: {
+      colorClass () {
+        return this.color + '--text'
+      }
+    }
+  }
+</script>
