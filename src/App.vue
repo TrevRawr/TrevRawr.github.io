@@ -7,7 +7,7 @@
           <v-toolbar-title class="display-2">Trevor Clelland</v-toolbar-title>
         </v-toolbar>
         <v-tabs-bar slot="activators" class="cyan">
-          <v-tabs-slider class="yellow"></v-tabs-slider>
+          <v-tabs-slider></v-tabs-slider>
           <!-- the to prop uses vue router to fulfill the link -->
           <v-tabs-item :to="{name: 'About'}">
             About
@@ -17,9 +17,9 @@
           </v-tabs-item>
         </v-tabs-bar>
       </v-tabs>
-      <!-- <v-fade-transition> -->
+      <transition name="fade">
         <router-view></router-view>
-      <!-- </v-fade-transition> -->
+      </transition>
     </v-app>
 </template>
 
@@ -39,4 +39,10 @@
   a {
     text-decoration: none;
   }
+  .fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0
+}
 </style>
