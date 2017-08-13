@@ -4,10 +4,10 @@
     <v-layout row>
     <v-flex xs12 sm10 offset-sm1>
       <v-card>
-        <v-list two-line>
+        <v-list dense three-line>
           <template v-for="item in items">
             <v-subheader v-if="item.header" v-text="item.header"></v-subheader>
-            <list-item v-else :title="item.title" :subtitle="item.subtitle" :divider="item.divider" :icon="item.icon" :github="item.github"></list-item>
+            <project-list-item v-else :title="item.title" :subtitle="item.subtitle" :divider="item.divider" :icon="item.icon" :github="item.github" :to='item.to'></project-list-item>
           </template>
         </v-list>
       </v-card>
@@ -17,9 +17,9 @@
 </template>
 
 <script>
-  import ListItem from '@/components/ListItem'
+  import ProjectListItem from '@/components/ProjectListItem'
   export default {
-    name: 'Projects',
+    name: 'projects',
     data () {
       return {
         items: [
@@ -30,7 +30,8 @@
             title: 'RenewPass',
             subtitle: 'An Android application for University students in British Columbia that automatically renews their monthly transit pass',
             icon: 'fa-recycle',
-            github: 'https://github.com/Coffeeboys/RenewPass'
+            github: 'https://github.com/Coffeeboys/RenewPass',
+            to: {name: 'ProjectDescription', params: { project: 'RenewPass' }}
           },
           {
             title: 'Chip-8 Emulator',
@@ -87,13 +88,14 @@
           {
             title: 'Textbook Marketplace',
             subtitle: 'A web app built using Django, Bootstrap, and Vue.js that allows students to buy and sell used textbooks',
-            icon: 'fa-book'
+            icon: 'fa-book',
+            divider: false
           }
         ]
       }
     },
     components: {
-      'list-item': ListItem
+      'project-list-item': ProjectListItem
     }
   }
 </script>

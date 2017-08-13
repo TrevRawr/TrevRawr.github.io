@@ -1,7 +1,7 @@
 <!-- A component that displays an item in a list -->
 <template>
   <div>
-    <v-list-tile v-bind:key="title" href="https://github.com/Coffeeboys/MorseTranslator">
+    <v-list-tile :to='to' :key='title'>
       <v-list-tile-action v-if="icon">
         <v-icon>{{ icon }}</v-icon>
       </v-list-tile-action>
@@ -19,8 +19,9 @@
 
 <script>
   export default {
-    name: 'ListItem',
+    name: 'project-list-item',
     props: {
+      to: {}, // could be a string or object, and is optional
       github: {
         type: String,
         require: false

@@ -15,7 +15,7 @@
           </v-layout>
         </v-container>
       </v-card-media>
-      <v-card-text>
+      <v-card-text class='subheading'>
         <p>
           My name is <strong>Trevor Clelland</strong>. I am a software developer and a student in the
           <a href='http://www.sfu.ca/computing/prospective-students/undergraduate-students/programs/degree-programs/softwaresystems.html'>Software Systems</a>
@@ -34,9 +34,28 @@
           film makers/friends called <a href='http://foxwoodfilms.com/'>Foxwood Films</a>. We primarily produce short films on mountain biking
         </P>
         <p>
-          If you would like to get in touch, don't hesitate to send mes a message.
+          If you would like to learn more about me, please check out the rest of my website.
+        </p>
+        <p>
+          If you would like to get in touch, don't hesitate to send me a message.
         </p>
       </v-card-text>
+      <v-card-actions>
+        <icon-button href="https://github.com/TrevRawr" color="orange" text="GitHub" icon="fa-github"></icon-button>
+        <icon-button href="https://ca.linkedin.com/in/trevor-clelland-00bb35105" color="blue" text="Linked In" icon="fa-linkedin"></icon-button>
+        <!-- TODO: add href for email -->
+        <icon-button color="red" text="E-mail" icon="fa-comments"></icon-button>
+      </v-card-actions>
     </v-card>
   </v-container>
 </template>
+
+<script>
+  import IconButton from '@/components/IconButton'
+  export default {
+    name: 'about',
+    components: {
+      'icon-button': IconButton
+    }
+  }
+</script>
