@@ -11,7 +11,7 @@
             <div class='mt-3 mb-2 headline grey--text'>
               About
             </div>
-            <span class='subheading'>{{ projectDescription.about }}</span>
+              <span class='subheading' v-html="projectDescription.about"></span>
           </template>
         </v-card-text>
         <v-card-actions>
