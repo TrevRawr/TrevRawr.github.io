@@ -31,7 +31,7 @@ var webpackConfig = merge(baseWebpackConfig, {
     // explained here: https://vuejs-templates.github.io/webpack/prerender.html
     new PrerenderSpaPlugin(
       path.join(__dirname, '../dist'),
-      [ '/']
+      [ '/', '/projects']
     ),
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
     new webpack.DefinePlugin({

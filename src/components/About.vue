@@ -6,7 +6,7 @@
         <img class='img-round img-rescale img-center' width="300px" src='/static/profile_photo.jpg'></img>
         <v-card-text class='subheading'>
           <p>
-            My name is <strong>Trevor Clelland</strong>. I am a software developer and a student in the
+            Hello, My name is <strong>Trevor Clelland</strong>. I am a software developer and a student in the
             <a href='http://www.sfu.ca/computing/prospective-students/undergraduate-students/programs/degree-programs/softwaresystems.html'>Software Systems</a>
             program at <strong>Simon Fraser University</strong> (SFU). I am interested in a wide variety of domains in Computer Science, but regardless of what I am working on,
             my focus is designing high quality, practical, readable, and maintainable code.
