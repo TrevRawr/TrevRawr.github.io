@@ -3,7 +3,6 @@ import Router from 'vue-router'
 import About from '@/components/About'
 import Projects from '@/components/Projects'
 import ProjectDescription from '@/components/ProjectDescription'
-
 Vue.use(Router)
 
 export default new Router({

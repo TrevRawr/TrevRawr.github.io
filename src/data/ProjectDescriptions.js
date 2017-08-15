@@ -24,6 +24,7 @@ export const projectDescriptions = {
       subtitle: 'An Android application for university students in British Columbia that automatically renews their monthly transit pass',
       icon: 'fa-recycle',
       github: 'https://github.com/Coffeeboys/RenewPass',
+      googlePlay: 'https://play.google.com/store/apps/details?id=ca.alexland.renewpass&hl=en',
       to: {name: 'ProjectDescription', params: { project: titles.renewPass }},
       about:
         `RenewPass is a project founded by my friend Alex Land. When Alex started this project, he had little experience
@@ -31,7 +32,7 @@ export const projectDescriptions = {
         My earliest contributions to the project consisted of giving Alex pointers
         on how to improve on his Android development techniques, but my influence on the project grew from there. Next, I helped Alex out
         with a code refactoring, which organized the project's class structures into packages, and modularized components for encapsulation and code reuse.
-        Finally, I implemented one of the major features of the application: to schedule automatic renewals of students' transit passes each month.`
+        Finally, I implemented one of the major features of the application: scheduling automatic renewals of students' transit passes each month.`
     },
     {
       title: titles.chip8,
@@ -163,8 +164,8 @@ export const projectDescriptions = {
           Implementing everything myself instead of using a graphics library made me understand what goes on under the hood of graphics libraries.
           I had to implement my own bi-linear interpolation, <a href="https://en.wikipedia.org/wiki/Clipping_(computer_graphics)">clipping</a>,
           <a href="https://en.wikipedia.org/wiki/Z-buffering">z-buffer/culling</a>, and <a href="http://www.opengl-tutorial.org/beginners-tutorials/tutorial-3-matrices/"> MVP matrix transformations</a> (ex: perspective projection transformation). All of these are things
-          that are usually provided by graphics/math libraries. At the same time, the transformations, interpreting 3-D model files, and lighting are all things that you would have
-          to do manually even if you used a graphics library. Because of this, the skills I learned in this course are applicable to modern graphics libraries.
+          that are usually provided by graphics/math libraries. Meanwhile, the transformations, interpreting 3-D model files, and lighting are all things that you would have
+          to do manually even if you used a graphics library. This means I learned both how to create and use graphics libraries.
         </p>`
     },
     {
