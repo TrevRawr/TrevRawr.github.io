@@ -15,7 +15,22 @@
           </template>
         </v-card-text>
         <v-card-actions>
-          <v-btn v-if='projectDescription.github' :href='projectDescription.github' flat class="orange--text"><v-icon class='mr-2 orange--text'>fa-github</v-icon>GitHub</v-btn>
+          <icon-button
+            v-if='projectDescription.github'
+            :href='projectDescription.github'
+            color='orange'
+            icon='fa-github'
+            text='GitHub'
+          >
+          </icon-button>
+          <icon-button
+            v-if='projectDescription.googlePlay'
+            :href='projectDescription.googlePlay'
+            color='green'
+            icon='fa-play'
+            text='Google Play'
+          >
+          </icon-button>
         </v-card-actions>
       </v-card>
     </v-container>
@@ -24,6 +39,7 @@
 
 <script>
   import {projectDescriptions} from '../data/ProjectDescriptions'
+  import IconButton from '@/components/IconButton'
   export default {
     name: 'project-description',
     props: ['project'],
@@ -31,6 +47,9 @@
       projectDescription () {
         return projectDescriptions.getProjectByTitle(this.project)
       }
+    },
+    components: {
+      'icon-button': IconButton
     }
   }
 </script>

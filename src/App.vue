@@ -20,6 +20,14 @@
             <v-tabs-item :to="{name: 'Projects'}">
               Projects
             </v-tabs-item>
+            <!-- This tab isn't really a tab, but a link to a static page -->
+            <!-- The static page (resume) could have been converted into a Vue -->
+            <!-- component to be displayed in a proper tab, but this would cause conflicting styles -->
+            <!-- between the auto-generated resume CSS and Vuetify's Stylus/CSS -->
+            <!-- goToResume() is used because href doesn't work for some reason -->
+            <v-tabs-item  v-on:click="goToResume">
+              Resume
+            </v-tabs-item>
           </v-tabs-bar>
         </v-tabs>
       </v-toolbar>
@@ -32,7 +40,12 @@
 
 <script>
   export default {
-    name: 'app'
+    name: 'app',
+    methods: {
+      goToResume: function () {
+        window.location.href = '/static/resume.html'
+      }
+    }
   }
 </script>
 
@@ -43,17 +56,13 @@
 
 <!-- Global plain css styling -->
 <style>
-  name {
-    justify-content: center;
-    align-self: center;
-  }
   a {
     text-decoration: none;
   }
   .fade-enter-active, .fade-leave-active {
-  transition: opacity 0.3s
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0
-}
+    transition: opacity 0.3s
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0
+  }
 </style>
