@@ -1,4 +1,4 @@
-<!-- A simple component to facilitate code reuse -->
+<!-- A simple component that combines a button and an icon to facilitate code reuse -->
 <template>
   <v-btn :href="href" flat :class="colorClass">
     <v-icon :class='[marginClass, colorClass]'>

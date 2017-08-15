@@ -1,7 +1,6 @@
 <!-- A "page" that displays a list of projects that I've worked on -->
 <template>
-  <div class="projects">
-    <v-layout row>
+  <v-layout row>
     <v-flex xs12 sm10 offset-sm1>
       <v-card>
         <v-list dense three-line>
@@ -13,7 +12,6 @@
       </v-card>
     </v-flex>
   </v-layout>
-  </div>
 </template>
 
 <script>

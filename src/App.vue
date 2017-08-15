@@ -2,9 +2,9 @@
 <!-- This is also where the global styling for Vuetify is setup -->
 <template>
     <v-app light>
-      <!-- This required some slight "Hacking to look right" -->
-      <!-- I wanted a large title without making the tab bar too ridiculously large -->
-      <!-- to do that, I had to put the tab bar inside the toolbar instead of where it typically goes below -->
+      <!-- This required some slight "Hacking" to look right -->
+      <!-- I wanted a large title without making the tool bar too ridiculously large -->
+      <!-- to do that, I had to put the tab bar inside the toolbar instead of below it, where it typically goes -->
       <!-- This then created some spacing issues where the tabs weren't in line with the bottom of the action bar -->
       <!-- To remedy this, I added padding to the top of the tabs bar -->
       <!-- Finally, the title needed to be shifted into an ideal place with margins -->
