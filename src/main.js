@@ -6,12 +6,6 @@ import App from './App'
 import router from './router'
 
 Vue.use(Vuetify)
-Vue.directive('on-render', {
-  isFn: true,
-  update: function (el) {
-    alert('Test!')
-  }
-})
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

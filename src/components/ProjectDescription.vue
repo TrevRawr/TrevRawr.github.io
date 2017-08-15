@@ -1,3 +1,6 @@
+<!-- A component used to render Project Description pages -->
+<!-- Though there are many different project description pages in the app, -->
+<!-- they all use this same component to render their content -->
 <template>
   <v-layout>
     <v-container>
