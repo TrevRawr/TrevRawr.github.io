@@ -1,6 +1,7 @@
 # Personal Portfolio GitHub Pages Website
 
-This is the repository that hosts my personal portfolio website. Note: this repository only contains the deploy-ready output files
+This is the repository that hosts my personal portfolio website. You can find the hosted site [here](https://trevrawr.github.io/). 
+Note: this repository only contains the deploy-ready output files
 from the tools I used to build the site. The actual source code for the site can be found at 
 [this repository](https://github.com/TrevRawr/Personal-Portfolio-Website).
 
